@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MovieGiffy</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Movie Giffy Party</h1>
+      <p class="lead">
+        Click the buttons to display the top GIFs found for each movie. If
+        you're feeling creative, submit your own movie reference to create a
+        button in the field below.
+      </p>
+      <hr class="my-4" />
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-primary" type="button" id="button-addon1">
+            Submit
+          </button>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder=""
+          aria-label="Example text with button addon"
+          aria-describedby="button-addon1"
+        />
+      </div>
+      <button
+        class="btn btn-secondary"
+        type="button"
+        id="button-addon1 buttons-display"
+      ></button>
+    </div>
+    <div id="movies-display"></div>
+    <script src="/assets/javascript/app.js"></script>
+  </body>
+</html>
