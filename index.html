@@ -13,15 +13,18 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class="jumbotron">
-      <h1 class="display-4">Star Wars GIF Party!! Becuase...Star Wars!</h1>
-      <p class="lead">
-        Get your fill of all GIFs Star Wars!!  Click any of the character buttons to enjoy their GIFs, or create your own and click! 
-      </p>
+      <h1 class="display-4">Star Wars GIF Party!!   
+          Because....................Star Wars!</h1>
+      <h5 class="lead">
+        Get your fill of all GIFs Star Wars!! Click any of the character buttons
+        to enjoy their GIFs, or create your own and click!
+      </h5>
       <hr class="my-4" />
       <div class="input-group mb-3">
         <div class="input-group-prepend">
@@ -40,8 +43,12 @@
       </div>
       <div id="buttons-display"></div>
     </div>
-    <div id="container"></div>
-        <div id="col-12 gif-display"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="gif-display"></div>
+        </div>
+      </div>
     </div>
     <script src="./assets/javascript/app.js"></script>
   </body>

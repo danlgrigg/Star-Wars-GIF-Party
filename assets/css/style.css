@@ -1,0 +1,33 @@
+body {
+  background-image: url("../images/1280px-Star_Wars_Logo.svg.png");
+  background-size: 10%;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: black;
+  color: gold;
+  font-style: italic;
+  font-family: "Poller One", cursive;
+}
+#container {
+  display: flex;
+}
+
+.card {
+    display: inline-flex;
+    border: solid .5rem gold;
+
+}
+
+h1 {
+    border: solid .1em gold;
+    border-radius: .5em;
+}
+
+p{ 
+    background-color: gold;
+    font-size: 1rem;
+
+}
