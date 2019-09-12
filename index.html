@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MovieGiffy</title>
+    <title>Star Wars GIF Party</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript"></script>
     <link
@@ -18,17 +18,15 @@
 
   <body>
     <div class="jumbotron">
-      <h1 class="display-4">Movie Giffy Party</h1>
+      <h1 class="display-4">Star Wars GIF Party!! Becuase...Star Wars!</h1>
       <p class="lead">
-        Click the buttons to display the top GIFs found for each movie. If
-        you're feeling creative, submit your own movie reference to create a
-        button in the field below.
+        Get your fill of all GIFs Star Wars!!  Click any of the character buttons to enjoy their GIFs, or create your own and click! 
       </p>
       <hr class="my-4" />
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <button class="btn btn-primary" type="button" id="button-addon1">
-            Submit
+            Create
           </button>
         </div>
         <input
@@ -37,15 +35,14 @@
           placeholder=""
           aria-label="Example text with button addon"
           aria-describedby="button-addon1"
+          id="button-title-input"
         />
       </div>
-      <button
-        class="btn btn-secondary"
-        type="button"
-        id="button-addon1 buttons-display"
-      ></button>
+      <div id="buttons-display"></div>
     </div>
-    <div id="movies-display"></div>
-    <script src="/assets/javascript/app.js"></script>
+    <div id="container"></div>
+        <div id="col-12 gif-display"></div>
+    </div>
+    <script src="./assets/javascript/app.js"></script>
   </body>
 </html>
