@@ -13,7 +13,7 @@ $(document).ready(function() {
     var movieButton = $("<button>");
     movieButton.text(movie);
     movieButton.attr("id", "movie-btn");
-    movieButton.attr("class", "btn btn-success m-1");
+    movieButton.attr("class", "btn btn-danger m-1");
     $("#buttons-display").prepend(movieButton);
   }
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
     var newButton = $("<button>");
     newButton.text(buttonTitle);
     newButton.attr("id", "movie-btn");
-    newButton.attr("class", "btn btn-success m-1");
+    newButton.attr("class", "btn btn-danger m-1");
     $("#buttons-display").append(newButton);
     //TODO:Need to clear/empty input field after user inputs and creates button
     // $("#button-title-input").clear();
