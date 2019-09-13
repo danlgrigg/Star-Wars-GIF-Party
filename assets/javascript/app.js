@@ -5,7 +5,7 @@ $(document).ready(function() {
     "Obi-Wan Kenobi",
     "Gen. Leia Organa",
     "Jar-Jar Binx",
-    "Tuscan Raiders",
+    "Kylo Ren",
     "Jabba the Hut"
   ];
   for (let i = 0; i < characterArray.length; i++) {
@@ -24,8 +24,7 @@ $(document).ready(function() {
     newButton.attr("id", "movie-btn");
     newButton.attr("class", "btn btn-danger m-1");
     $("#buttons-display").append(newButton);
-    //TODO:Need to clear/empty input field after user inputs and creates button
-    // $("#button-title-input").clear();
+    $("#button-title-input").val("");
 
 
   });
@@ -50,11 +49,12 @@ $(document).ready(function() {
       .then(function(response) {
         for (let i = 0; i < response.data.length; i++) {
           var gif = response.data[i];
-          console.log(gif);
+          var gifStill = gif.images.fixed_height_still.url;
+          var gifAnimate = gif.images.fixed_height.url;
           var gifDiv = $(
-            '<div class="card m-3" style="width: 18rem;">' +
-              "<img src=" + gif.images.fixed_height.url +
-              '" class="card-img-top gif" alt="...">' +
+
+            `<div class="card m-3" style="width: 18rem;">` +
+              `<img src="${gifStill}" class="card-img-top gif" data-state="still" data-still="${gifStill}" data-animate="${gifAnimate}" alt="...">` +
               '<div class="card-body-danger">' +
               '<p class="card-text">' + 'Rating: ' +
               gif.rating +
@@ -63,7 +63,7 @@ $(document).ready(function() {
           );
           $("#gif-display").append(gifDiv);
 
-          TODO:// create click event to animate and still gifs
+          // create click event to animate and still gifs
           $(".gif").on("click", function() {
             var state = $(this).attr("data-state");
             
